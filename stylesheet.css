@@ -1,0 +1,475 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background:rgb(219, 128, 9);
+}
+.loader {
+    position: fixed;
+    z-index: 100000000000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 	#000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader > img {
+    width: 30%;
+    height: 40%;
+}
+
+.loader.hidden {
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    padding: 20px 80px;
+    z-index: 100000;
+    background-color: rgba(61, 61, 61, 0.7);
+}
+header.sticky{
+    padding: 5px 100px;
+    background: rgba(255, 255, 255, 0.90);
+}
+header .logo{
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    position: relative;
+    list-style: none;
+}
+header.sticky ul li a{
+    color: #000;
+}
+header.sticky .menu-toggle{
+    color: black;
+}
+header.sticky .logo{
+    color: black;
+}
+header .logo{
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    font-size:25px;
+    float: left;
+    font-weight: bold;
+}
+header nav{
+    float: right;
+}
+header nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+header nav ul li{
+    list-style: none;
+    
+}
+header nav ul li a{
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    color: #fff;
+    text-decoration:none;
+    display: block;
+    position: relative;
+    margin: 0 15px;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+}
+header nav ul li a:hover,
+header nav ul li a.active{
+    color: #fff;
+    background: #2196f3;
+}
+.menu-toggle{
+    color: #fff;
+    float: right;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+#introduction{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 3% 0% 0% 5%;
+    }
+#banner{
+    position: relative;
+    width: 100%;
+    height: 30vh;
+}
+#introduction .details ul{
+    list-style: none;
+}
+#introduction .details ul li{
+    color: #fff;
+    font-size: 4.5rem;
+    font-weight: 700;
+    transition: 1s;
+}
+#introduction .details ul p{
+    color: white;
+    font-weight: 700;
+}
+#introduction .details h3{
+    color: #fff;
+}
+#introduction .baronepro{
+    width: 60%;
+    height: 100%;
+    padding: 1% 2%;
+    margin-top: 8%;
+    margin-bottom: 2%;
+}
+#introduction .barone{
+    display: none;
+}
+#introduction .baronepro a{
+    text-decoration: none;
+    color: grey;
+    margin: 14% 2%;
+}
+#introduction .baronepro a:hover{
+    color: white;
+    transition: 0.6s ease-in-out;
+}
+#about{
+    width: 100%;
+    height: 100%;
+}
+#about .theme{
+    width: 70%;
+    height: 100%;
+    background-size: 100% 100%;
+    display: flex;
+    margin: 0 auto;
+    color: #fff;
+}
+#about .theme .auto{
+    width: 25%;
+    height: 150px;
+    margin: 3% 5% 2% 5%;
+    padding: 0% 0% 2% 4%; 
+    display: inline-block; 
+}
+#about .theme .auto i{
+    font-size: 4rem;
+}
+#coursearea{
+    width: 100%;
+    height: 20vh;
+    background: rgba(199, 196, 196, 0.5);
+}
+#course{
+    width: 100%;
+    height: 100%;
+    background: rgba(199, 196, 196, 0.5);
+}
+#course p{
+    font-size: 3.5rem;
+    font-variant: small-caps;
+    color: #fff;
+    margin-bottom: 5%;
+}
+#course .parentcourses{
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
+}
+#course .courses{
+    width: 25%;
+    height: 100%;
+    background-color: #fff;
+    display: inline-block;
+    box-shadow: 1px 1px 2px black;
+    padding: 1%;
+    margin: 2%;
+}
+#course .courses img{
+    width: 100%;
+    height: 75%;
+}
+#course .courses p{
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 600;
+    color: grey;
+    font-variant: normal;
+}
+#admissionsarea{
+    width: 100%;
+    height: 20vh;
+}
+#admissions{
+    width: 100%;
+    height: 100%;
+}
+#admissions p{
+    font-size: 3.5rem;
+    font-variant: small-caps;
+    color: #fff;
+    margin-bottom: 5%;
+}
+#application-form{
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    background-color: #fff;
+    padding: 5%;
+}
+#application-form input{
+    width: 40%;
+    height: 35px;
+    margin: 2%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#placementarea{
+    width: 100%;
+    height: 20vh;
+    background: rgba(199, 196, 196, 0.5);
+}
+#placement{
+    width: 100%;
+    height: 100%;
+    background: rgba(199, 196, 196, 0.5);
+}
+#placement p{
+    font-size: 3.5rem;
+    font-variant: small-caps;
+    color: #fff;
+    margin-bottom: 5%;
+}
+#placement .parentcompanies{
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
+}
+#placement .company{
+    width: 25%;
+    height: 100%;
+    background-color: #fff;
+    display: inline-block;
+    box-shadow: 1px 1px 2px black;
+    padding: 1%;
+    margin: 2%;
+}
+#placement .company img{
+    width: 100%;
+    height: 75%;
+}
+#placement .company p{
+    font-size: 0.95rem;
+    text-align: center;
+    color: grey;
+    font-variant: normal;
+}
+#placement .company h3{
+    font-size: 1rem;
+    color: black;
+    text-align: center;
+}
+
+
+
+#hostelarea{
+    width: 100%;
+    height: 20vh;
+    background: rgba(7, 7, 7, 0.75);
+}
+#hostel{
+    width: 100%;
+    height: 100%;
+    background: rgba(7, 7, 7, 0.75);
+}
+#hostel p{
+    font-size: 3.5rem;
+    font-variant: small-caps;
+    color: #fff;
+    margin-bottom: 5%;
+}
+#hostel .parentroom{
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
+}
+#hostel .room{
+    width: 25%;
+    height: 100%;
+    background-color: #fff;
+    display: inline-block;
+    box-shadow: 1px 1px 2px #fff;
+    padding: 1%;
+    margin: 2%;
+}
+#hostel .room img{
+    width: 100%;
+    height: 75%;
+}
+#hostel .room p{
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 600;
+    color: grey;
+    font-variant: normal;
+}
+
+
+#data .hostel-topic{
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    background-color: #fff;
+
+}
+#data{
+    background-color: #fff;
+    color: #000;
+}
+#data .hostel-topic h1{
+    text-align: center;
+    font-size: 3rem;
+    font-variant: small-caps;
+    color: #000;
+    margin-bottom: 5%;
+}
+#data .hostel-topic p{
+    font-size: 1.10rem;
+    color: #000;
+    margin-bottom: 5%;
+    letter-spacing: 1.25px;
+    word-spacing: 2.1px;
+}
+#data .hostel-topic ul li{
+    color: #000;
+}
+
+
+
+#eventarea{
+    width: 100%;
+    height: 20vh;
+    background: rgba(199, 196, 196, 0.5);
+}
+#event{
+    width: 100%;
+    height: 100%;
+    background: rgba(199, 196, 196, 0.5);
+}
+#event p{
+    font-size: 3.5rem;
+    font-variant: small-caps;
+    color: #fff;
+    margin-bottom: 5%;
+}
+#event .parentparty{
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
+}
+#event .party{
+    width: 40%;
+    height: 100%;
+    background-color: #fff;
+    display: inline-block;
+    box-shadow: 1px 1px 2px black;
+    padding: 1%;
+    margin: 2%;
+}
+#event .party img{
+    width: 100%;
+    height: 75%;
+}
+#event .party p{
+    font-size: 0.97rem;
+    text-align: center;
+    color: grey;
+    font-variant: normal;
+}
+#event .party h3{
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+}
+
+#footer{
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+    background-color: #34f3;
+}
+#navigator{
+    padding: 0.5%;
+    font-weight: 900;
+    position: sticky;
+    bottom: 0;
+    float: right;
+    width:60px;
+    height: 60px;
+    color: #fff;
+    background-color: rgba(63, 20, 20, 0.45);
+    cursor: pointer;
+}
+#navigator a{
+    color: #fff;
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+}
+#contactarea{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    color: #000;
+    background: #fff;
+}
+.footer{
+    margin: 1% 10%;
+}
+.footer p{
+    font-size: smaller;
+}

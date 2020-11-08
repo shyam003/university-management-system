@@ -1,0 +1,381 @@
+@media (max-width:991px){
+    body{
+        background: #1e272e;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+    header{
+        padding: 0 20px;
+    }
+    .menu-toggle{
+        display: block;
+        color:white;
+    }
+    header nav{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        height: calc(100vh -50px);
+        background: #fff;
+        top: 50px;
+        left: -100%;
+        transition: 0.5s;
+    }
+    header nav.active{
+        left: 0;
+    }
+    header nav ul{
+        display: block;
+        text-align: center;
+    }
+    header nav ul li{
+        color: black;
+        font-weight: 700;
+    }
+    header nav ul li a{
+        color: black;
+    }
+    body{
+        padding: 0%;
+        margin: 0%;
+    }
+    #banner{
+        height: 21vh;
+    }
+    #introduction{
+        display: block;
+        height: 100%;
+    }
+    #introduction .details{
+        height: 100%;
+    }
+    #introduction .details ul li{
+        font-size: 2rem;
+        margin-top: 1.5%;
+        font-weight: 560;
+        transition: 1s;
+    }
+    #introduction .details h3{
+        font-size: 1rem;
+        word-spacing: 2px;
+        font-weight: 300;
+    }
+    #introduction .baronepro{
+        display: none;
+    }
+    #introduction .barone{
+        display: block;
+        color: #fff;
+        margin: 5%;
+    }
+    #introduction .barone i{
+        padding: 8%;
+    }
+    #introduction .barone i:hover{
+        filter: drop-shadow(3px 3px 10px #ffffff);
+    }
+
+    #about{
+        height: 100%;
+        background-color: transparent;
+    }
+    #about .theme .auto{
+        width: 25%;
+        height: 40px;
+        margin: 3% 2% 2% 2%;
+        padding: 0% 0% 2% 4%; 
+        display: inline-block; 
+    }
+    #about .theme .auto i{
+        font-size: 2rem;
+    }
+    #about .theme .auto p{
+        font-size: .5rem;
+    }
+
+
+
+    #coursearea{
+        width: 100%;
+        height: 10vh;
+        background: transparent;
+    }
+    #course{
+        width: 100%;
+        height: 100%;
+        background: transparent;
+    }
+    #course p{
+        font-size: 2rem;
+        font-variant: small-caps;
+        color: #fff;
+        margin-bottom: 5%;
+    }
+    #course .parentcourses{
+        width: 85%;
+        height: 100%;
+        margin: 0 auto;
+    }
+    #course .courses{
+        width: 40%;
+        height: 100%;
+        background-color: #fff;
+        display: inline-block;
+        box-shadow: 1px 1px 2px black;
+        padding: 1%;
+        margin: 2%;
+    }
+    #course .courses img{
+        width: 100%;
+        height: 75%;
+    }
+    #course .courses p{
+        font-size: .5rem;
+        text-align: center;
+        font-weight: 600;
+        color: grey;
+        font-variant: normal;
+    }
+    #admissionsarea{
+        width: 100%;
+        height: 10vh;
+    }
+    #admissions{
+        width: 100%;
+        height: 100%;
+    }
+    #admissions p{
+        font-size: 2rem;
+        font-variant: small-caps;
+        color: #fff;
+        margin-bottom: 5%;
+    }
+    
+
+    #application-form input{
+        width: 90%;
+        height: 35px;
+        margin: 2%;
+    }
+    #application-form{
+        width: 80%;
+        height: 100%;
+        margin: auto;
+        background-color: #fff;
+        padding: 5%;
+    }
+
+
+
+
+
+
+    #placementarea{
+        width: 100%;
+        height: 10vh;
+        background: transparent;
+    }
+    #placement{
+        width: 100%;
+        height: 100%;
+        background: transparent;
+    }
+    #placement p{
+        font-size: 2rem;
+        font-variant: small-caps;
+        color: #fff;
+        margin-bottom: 5%;
+    }
+    #placement .parentcompanies{
+        width: 85%;
+        height: 100%;
+        margin: 0 auto;
+    }
+    #placement .company{
+        width: 40%;
+        height: 100%;
+        background-color: #fff;
+        display: inline-block;
+        box-shadow: 1px 1px 2px black;
+        padding: 1%;
+        margin: 2%;
+    }
+    #placement .company img{
+        width: 100%;
+        height: 75%;
+    }
+    #placement .company p{
+        font-size: .5rem;
+        text-align: center;
+        font-weight: 600;
+        color: grey;
+        font-variant: normal;
+    }
+    #placement .company h3{
+        font-size: 0.7rem;
+        font-weight: 600;
+        color: black;
+        text-align: center;
+    }
+
+
+
+
+
+
+    #hostelarea{
+        width: 100%;
+        height: 10vh;
+        background: transparent;
+    }
+    #hostel{
+        width: 100%;
+        height: 100%;
+        background: transparent;
+    }
+    #hostel p{
+        font-size: 2rem;
+        font-variant: small-caps;
+        color: #fff;
+        margin-bottom: 5%;
+    }
+    #hostel .parentroom{
+        width: 85%;
+        height: 100%;
+        margin: 0 auto;
+    }
+    #hostel .room{
+        width: 40%;
+        height: 100%;
+        background-color: #fff;
+        display: inline-block;
+        box-shadow: 1px 1px 2px black;
+        padding: 1%;
+        margin: 2%;
+    }
+    #hostel .room img{
+        width: 100%;
+        height: 75%;
+    }
+    #hostel .room p{
+        font-size: .5rem;
+        text-align: center;
+        font-weight: 600;
+        color: grey;
+        font-variant: normal;
+    }
+
+
+
+
+
+
+    #data .hostel-topic{
+        width: 90%;
+        height: 100%;
+        margin: auto;
+        background: #1e272e;
+    }
+    #data .hostel-topic h1{
+        text-align: center;
+        font-size: 1.65rem;
+        font-variant: small-caps;
+        color: #fff;
+        margin-bottom: 5%;
+    }
+    #data .hostel-topic p{
+        font-size: 0.65rem;
+        color: #fff;
+        margin-bottom: 5%;
+        letter-spacing: 0.8px;
+        word-spacing: 1.1px;
+    }
+    #data .hostel-topic ul li{
+        font-size: 0.65rem;
+        color: #fff;
+        letter-spacing: 0.8px;
+        word-spacing: 1.1px;
+    }
+    #data{
+        background: #1e272e;
+    }
+
+
+
+
+    #eventarea{
+        width: 100%;
+        height: 10vh;
+        background: transparent;
+    }
+    #event{
+        width: 100%;
+        height: 100%;
+        background: transparent;
+    }
+    #event p{
+        font-size: 2rem;
+        font-variant: small-caps;
+        color: #fff;
+        margin-bottom: 5%;
+    }
+    #event .parentparty{
+        width: 85%;
+        height: 100%;
+        margin: 0 auto;
+        padding: 5%;
+        background-color: rgba(255, 255, 255, 0.08);
+    }
+    #event .party{
+        width: 40%;
+        height: 100%;
+        background-color: #fff;
+        display: inline-block;
+        box-shadow: 1px 1px 2px black;
+        padding: 1%;
+        margin: 2%;
+    }
+    #event .party img{
+        width: 100%;
+        height: 75%;
+    }
+    #event .party p{
+        font-size: .5rem;
+        text-align: center;
+        color: grey;
+        font-variant: normal;
+    }
+    #event .party h3{
+        font-size: 0.7rem;
+        font-weight: 600;
+        color: black;
+        text-align: center;
+    }
+
+
+
+    #navigator{
+        padding: 0.5%;
+        font-weight: 900;
+        position: sticky;
+        bottom: 0;
+        float: right;
+        width:30px;
+        height: 30px;
+        background-color: rgba(63, 20, 20, 0.45);
+        cursor: pointer;
+    }
+
+    #contactarea{
+        width: 100%;
+        height: 10vh;
+        display: inline-block;
+        color: #fff;
+        background: transparent;
+    }
+    .footer{
+        margin: 1% 10%;
+    }
+    .footer p{
+        font-size: smaller;
+    }
